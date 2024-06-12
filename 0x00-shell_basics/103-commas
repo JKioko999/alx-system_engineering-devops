@@ -1,3 +1,2 @@
 #!/bin/bash
-(ls -A1p | grep -E '^(\.|[^.])' | sort -f; ls -A1p | grep -E '^\.{1,2}$') | tr '\n' ',' | sed 's/,/, /g; s/, $/\n/'
-
+(ls -A1p | grep -E '^(\.|[^.])'; ls -A1p | grep -E '^\.{1,2}$') | tr '\n' ',' | sed 's/,/, /g; s/, $/\n/'
